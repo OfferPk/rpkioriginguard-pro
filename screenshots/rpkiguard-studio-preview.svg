@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bgRpki" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060814"/>
+      <stop offset="50%" stop-color="#0c1126"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </linearGradient>
+    <linearGradient id="gradLogoRpki" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="gradScoreRpki" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bgRpki)"/>
+
+  <!-- Header -->
+  <rect x="30" y="24" width="1140" height="60" rx="10" fill="#121938" stroke="#212c58" stroke-width="1.5"/>
+  <rect x="46" y="38" width="38" height="32" rx="6" fill="url(#gradLogoRpki)"/>
+  <text x="65" y="60" fill="#020617" font-family="-apple-system, sans-serif" font-weight="900" font-size="13" text-anchor="middle">ROA</text>
+  <text x="96" y="58" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="18">RPKIOriginGuard Pro</text>
+  <text x="310" y="57" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">RPKI Route Origin Validation (RFC 6811/8210) &bull; BGP Hijack Defense Studio</text>
+
+  <rect x="880" y="40" width="135" height="26" rx="6" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-opacity="0.4"/>
+  <text x="947" y="57" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">RFC 9319 Strict</text>
+  <rect x="1025" y="40" width="130" height="26" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4"/>
+  <text x="1090" y="57" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Drop Invalids Safe</text>
+
+  <!-- Left: Parameters & Inspector -->
+  <rect x="30" y="104" width="555" height="360" rx="10" fill="#121938" stroke="#212c58" stroke-width="1.5"/>
+  <text x="50" y="134" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">1. BGP Announced Prefixes &amp; Registered ROAs (JSON)</text>
+
+  <rect x="50" y="154" width="515" height="85" rx="6" fill="#080c1c" stroke="#212c58"/>
+  <text x="64" y="176" fill="#38bdf8" font-family="monospace" font-size="11">{"asn": 64512, "announcedPrefixes": [{"prefix": "198.51.100.0/22", "originAsn": 64512}],</text>
+  <text x="64" y="196" fill="#34d399" font-family="monospace" font-size="11"> "roas": [{"prefix": "198.51.100.0/22", "maxLength": 22, "asn": 64512, "rir": "ARIN"}],</text>
+  <text x="64" y="216" fill="#fbbf24" font-family="monospace" font-size="11"> "routerConfig": {"dropInvalids": true, "rtrValidators": ["10.0.1.50:3323"]}}</text>
+
+  <!-- Inspector Pills -->
+  <rect x="50" y="255" width="250" height="50" rx="6" fill="#0c1126" stroke="#212c58"/>
+  <text x="64" y="273" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10">ORGANIZATION &amp; ASN</text>
+  <text x="64" y="293" fill="#ffffff" font-family="monospace" font-size="11">AS64512 (Apex Financial)</text>
+
+  <rect x="315" y="255" width="250" height="50" rx="6" fill="#0c1126" stroke="#212c58"/>
+  <text x="329" y="273" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10">ROV VALIDITY STATUS</text>
+  <text x="329" y="293" fill="#10b981" font-family="monospace" font-size="11">2 / 2 Valid (100%)</text>
+
+  <rect x="50" y="315" width="250" height="50" rx="6" fill="#0c1126" stroke="#212c58"/>
+  <text x="64" y="333" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10">RFC 9319 MAXLENGTH HYGIENE</text>
+  <text x="64" y="353" fill="#10b981" font-family="monospace" font-size="11">Strict (0 Loose ROAs)</text>
+
+  <rect x="315" y="315" width="250" height="50" rx="6" fill="#0c1126" stroke="#212c58"/>
+  <text x="329" y="333" fill="#64748b" font-family="-apple-system, sans-serif" font-size="10">EDGE ROUTER POLICY</text>
+  <text x="329" y="353" fill="#38bdf8" font-family="monospace" font-size="11">Drop Invalids (2 RTR)</text>
+
+  <rect x="50" y="375" width="515" height="74" rx="6" fill="#080c1c" stroke="#212c58"/>
+  <text x="66" y="398" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">TIER-1 TRANSIT &amp; BGP TELEMETRY HEALTH:</text>
+  <text x="66" y="418" fill="#34d399" font-family="monospace" font-size="11">&#10003; 100% ROV Valid &bull; Zero Invalids &bull; Dual-Stack (IPv4 / IPv6) Parity</text>
+  <text x="66" y="436" fill="#38bdf8" font-family="monospace" font-size="11">&#10003; Redundant RTR Caches &bull; Real-Time Sub-Prefix Hijack Alerting Active</text>
+
+  <!-- Right: 10-Point Scorecard -->
+  <rect x="615" y="104" width="555" height="360" rx="10" fill="#121938" stroke="#212c58" stroke-width="1.5"/>
+  <text x="635" y="134" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">2. 10-Point Zero-Trust RPKI Scorecard</text>
+
+  <rect x="635" y="152" width="515" height="74" rx="8" fill="#0c1126" stroke="#212c58"/>
+  <circle cx="678" cy="189" r="28" fill="url(#gradScoreRpki)"/>
+  <text x="678" y="196" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="800" font-size="20" text-anchor="middle">A+</text>
+  <text x="722" y="180" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="16">100 / 100 Points</text>
+  <text x="722" y="200" fill="#10b981" font-family="-apple-system, sans-serif" font-size="12">Tier-1 Transit Protected &bull; 10 Passed &bull; 0 Outage Risks</text>
+
+  <!-- Checks List -->
+  <rect x="635" y="238" width="515" height="32" rx="4" fill="#080c1c" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="647" y="258" fill="#34d399" font-family="monospace" font-size="11">[PASS] ROV Validity Rate: 100% of announced routes match valid ROAs.</text>
+
+  <rect x="635" y="278" width="515" height="32" rx="4" fill="#080c1c" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="647" y="298" fill="#34d399" font-family="monospace" font-size="11">[PASS] Zero Invalids Active: Zero routes blackholed by transit providers.</text>
+
+  <rect x="635" y="318" width="515" height="32" rx="4" fill="#080c1c" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="647" y="338" fill="#34d399" font-family="monospace" font-size="11">[PASS] Strict MaxLength Hygiene: RFC 9319 compliant (No loose ROAs).</text>
+
+  <rect x="635" y="358" width="515" height="32" rx="4" fill="#080c1c" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="647" y="378" fill="#34d399" font-family="monospace" font-size="11">[PASS] Edge Router Drop Invalids: Strict ROV drops invalid routes on eBGP.</text>
+
+  <rect x="635" y="398" width="515" height="32" rx="4" fill="#080c1c" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="647" y="418" fill="#34d399" font-family="monospace" font-size="11">[PASS] RTR Validator Redundancy: 2 redundant cache validators connected.</text>
+
+  <!-- Bottom: Multi-Router Synthesizer -->
+  <rect x="30" y="484" width="1140" height="190" rx="10" fill="#121938" stroke="#212c58" stroke-width="1.5"/>
+  <text x="50" y="514" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">3. Multi-Router Zero-Trust BGP/RPKI Synthesizer (BIRD 2, FRR, Cisco IOS-XR, Juniper Junos)</text>
+
+  <rect x="50" y="528" width="1100" height="130" rx="6" fill="#080c1c" stroke="#212c58"/>
+  <text x="66" y="552" fill="#fbbf24" font-family="monospace" font-size="12"># BIRD 2 Hardened RPKI Route Origin Validation (ROV) Configuration</text>
+  <text x="66" y="572" fill="#cbd5e1" font-family="monospace" font-size="12">protocol rpki rpki_primary { roa4 { table r4; }; roa6 { table r6; }; remote "10.0.1.50" port 3323; };</text>
+  <text x="66" y="592" fill="#34d399" font-family="monospace" font-size="12">if roa_check(r4, net, bgp_path.last) = ROA_INVALID then { print "[RPKI REJECT]"; reject; };</text>
+  <text x="66" y="612" fill="#94a3b8" font-family="monospace" font-size="12"># Drop-Invalid policy prevents hijacked sub-prefixes from entering forwarding table</text>
+</svg>
